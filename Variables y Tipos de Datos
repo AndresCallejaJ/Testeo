@@ -1,0 +1,9 @@
+fun main() {
+    // valor de PI
+    val P = 3.1416
+    // decimal
+    val Decimal = 4.567
+    // Calcular el perímetro del círculo
+    val perimetro = 2 * P * Decimal
+    // Imprimir el resultado
+    println("El perímetro del círculo con radio $Decimal es $perimetro")

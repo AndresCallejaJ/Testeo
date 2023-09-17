@@ -1,0 +1,30 @@
+fun CalcularLaPendiente(x1: Int, y1: Int, x2: Int, y2: Int): Double {
+   	// Numerador 
+    val num = y2 - y1
+    // Denominador
+    val den = x2 - x1
+
+    return if (den != 0) {
+        val pendiente = num.toDouble() / den
+        if (num < 0 && den < 0 || num > 0 && den > 0) {
+            // Ajustar el signo de la pendiente
+            pendiente
+        } else {
+            -pendiente
+        }
+    } else {
+        // La pendiente es infinita para una división por cero
+        Double.POSITIVE_INFINITY
+    }
+}
+
+fun main() {
+    val x1 = 4
+    val y1 = 3
+    val x2 = -3
+    val y2 = -2
+
+    val pen = CalcularLaPendiente(x1, y1, x2, y2)
+
+    println("La pendiente es: $pen")
+}

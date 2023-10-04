@@ -1,0 +1,19 @@
+fun calcularAreaRectangulo(base: Double, altura: Double): Double {
+    return base * altura
+}
+
+fun calcularVolumenPrismaRectangular(base: Double, altura: Double, profundidad: Double): Double {
+    val areaBase = calcularAreaRectangulo(base, altura)
+    return areaBase * profundidad
+}
+
+fun main() {
+    val baseRectangulo = 5.0
+    val alturaRectangulo = 3.0
+    val areaRectangulo = calcularAreaRectangulo(baseRectangulo, alturaRectangulo)
+    println("El área del rectángulo es: $areaRectangulo")
+
+    val profundidadPrisma = 10.0
+    val volumenPrisma = calcularVolumenPrismaRectangular(baseRectangulo, alturaRectangulo, profundidadPrisma)
+    println("El volumen del prisma rectangular es: $volumenPrisma")
+}

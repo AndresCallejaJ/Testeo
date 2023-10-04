@@ -1,0 +1,16 @@
+// Funciones Locales
+fun login(user: String, password: String): Boolean {
+    fun validate(input: String): Boolean {
+        return input.isNotEmpty()
+    }
+
+    val userValidate = validate(user)
+    val passValidate = validate(password)
+
+    return userValidate && passValidate
+}
+
+fun main() {
+    val userValidate = login("Juanito", "Navaja*")
+    println("¿Usuario loggeado? $userValidate")
+}

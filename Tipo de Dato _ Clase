@@ -1,0 +1,20 @@
+fun identificarTipoDato(dato: Any) {
+    when (dato) {
+        is String -> println("El tipo de dato es String")
+        is Int -> println("El tipo de dato es Int")
+        is Double -> println("El tipo de dato es Double")
+        else -> println("El tipo de dato es Otro")
+    }
+}
+
+fun main() {
+    val stringDato: Any = "Hola, soy un String"
+    val intDato: Any = 42
+    val doubleDato: Any = 3.14
+    val otroDato: Any = true
+
+    identificarTipoDato(stringDato) // El tipo de dato es String
+    identificarTipoDato(intDato)    // El tipo de dato es Int
+    identificarTipoDato(doubleDato)  // El tipo de dato es Double
+    identificarTipoDato(otroDato)    // El tipo de dato es Otro
+}

@@ -1,0 +1,13 @@
+fun main() {
+    val Age = 18
+    
+    val resultado = if (Age > 18) {
+        "Eres mayor de edad."
+    } else if (Age == 18){
+      	"Acabas de cumplir la mayoria de edad"  
+    }  else {
+        "Eres menor de edad."
+    }
+
+    println(resultado)
+}

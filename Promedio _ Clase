@@ -1,0 +1,10 @@
+fun calcularPromedio(calificacion1: Double = 8.0, calificacion2: Double = 8.0, calificacion3: Double): Double {
+    val sumaCalificaciones = calificacion1 + calificacion2 + calificacion3
+    return sumaCalificaciones / 3
+}
+
+fun main() {
+    val calificacion3 = 7.0  // La tercera calificación no tiene un valor predefinido
+    val promedio = calcularPromedio(calificacion3 = calificacion3)
+    println("El promedio de las calificaciones es: $promedio")
+}

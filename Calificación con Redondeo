@@ -1,0 +1,19 @@
+import kotlin.math.round
+
+fun calcularPromedio(calificacion1: Double = 8.0, calificacion2: Double = 8.0, calificacion3: Double): Double {
+    val sumaCalificaciones = calificacion1 + calificacion2 + calificacion3
+    val promedio = sumaCalificaciones / 3
+
+    // Redondear hacia arriba o hacia abajo según la parte decimal
+    return if (promedio >= 5.0) {
+        round(promedio)
+    } else {
+        promedio
+    }
+}
+
+fun main() {
+    val calificacion3 = 3.3  // La tercera calificación no tiene un valor predefinido
+    val promedio = calcularPromedio(calificacion3 = calificacion3)
+    println("El promedio redondeado de las calificaciones es: $promedio")
+}

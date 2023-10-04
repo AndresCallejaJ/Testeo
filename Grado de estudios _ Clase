@@ -1,0 +1,21 @@
+fun gradoEscolar() {
+    val age = 13
+
+    when (age) {
+        0 -> println("Apenas eres recién nacido")
+        1 -> println("Solo tienes un año de edad")
+        in 2..5 -> println("Estás en preescolar")
+        in 6..11 -> println("Estás en la primaria")
+        in 12..14 -> println("Estás en la secundaria")
+        in 15..17 -> println("Estás en la secundaria")
+        in 18..30 -> println("Estás en la universidad")
+        else -> { 
+            println("Edad invalida")
+            println("vuelve a correr el codigo")
+        }
+    }
+}
+
+fun main() {
+    gradoEscolar()
+}

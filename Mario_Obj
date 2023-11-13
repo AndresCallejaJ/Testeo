@@ -5,6 +5,10 @@ class Mario(var vidas: Int =3){ //Indicaremos el nimero de vidas al iniciar el o
 	}
 	
 	private var state = "small" //Mario es pequeño al inicar el juego
+	set(value){
+		field = value
+	}
+	get() = field
 	private var lives =3 //uno empieza el juego con 3 vidas
 
 	//resta una vida al jugador
